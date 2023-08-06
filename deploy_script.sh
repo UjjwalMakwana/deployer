@@ -14,6 +14,7 @@ apt update && apt upgrade -y
 apt install git -y
 _other_installs
 pip3 install -U pip
+git config --global credential.helper store
 git clone $PRIVATE_REPO_URL Github_Repo
 cd Github_Repo
 pip3 install -U -r requirements.txt
